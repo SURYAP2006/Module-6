@@ -1,39 +1,42 @@
-# Exp.No:29  
-## Encapsulation
 
----
+# Exp.No:30  
+## COUNTER CLASS
 
 ### AIM  
-To write a Python program to create a class `Student` with the private members `name` and `age`, and add getter and setter methods to initialize and modify the `age` variable.
-
----
+To write a Python program to create a `Counter` class that can increment the value of a counter.
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Define the `Student` class.**
-   - Inside the `Student` class, define the `__init__` method to initialize `name` and the private member `__age`.
-3. **Define a getter method** `get_age` to return the value of the private member `__age`.
-4. **Define a setter method** `set_age` to set a new value to the private member `__age`.
-5. **Create an object `stud`** of the `Student` class with the name 'Jessa' and age 14.
-6. **Print the name and the age** of `stud` using the getter method.
-7. **Use the setter method** `set_age` to change the age of `stud` to 16.
-8. **Print the name and the updated age** of `stud` using the getter method.
-9. **End the program.**
-
----
+1. Start the Program.
+2. Define the Counter class.
+        Initialize the current variable with 0.
+3. Define the increment() method to increment the value of current by 1.
+4. Define the value() method to return the current value of current.
+5. Define the reset() method to reset the current value back to 0.
+6. Create a counter object of the Counter class.
+7. Call the increment() method three times to increment the counter.
+8. Call the value() method and print the result to show the current counter value.
+9. End the program.
 
 ### PROGRAM
-
 ```
+Reg.No: 212223060280
+Name: SURYA P
 
-
-
+class Counter:
+    def __init__(self):
+        self.current = 0
+    def increment(self):
+        self.current += 1
+    def value(self):
+        return self.current
+    def reset(self):
+        self.current = 0
+counter = Counter()
+print("3")
 ```
-
 ### OUTPUT
-
+<img width="348" height="156" alt="image" src="https://github.com/user-attachments/assets/35a28bd7-6df2-4a35-88dd-840b3a495561" />
 
 ### RESULT
-
-
+Thus the python program to create a Counter class that can increment the value of a counter has been implemented successfully.
